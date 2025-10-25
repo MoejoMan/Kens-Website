@@ -51,20 +51,29 @@ main {
   transform: translateY(0);
 }
 
-
-.typewriter {
+.typewriter-container {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #000;
-  font-weight: 600;
+  border-right: none;
+}
+
+.cursor {
+  position: relative;
+  margin: 0 auto;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
   font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .typewriter-animation {
   animation:
     typewriter 5s steps(50) 1s 1 normal both,
-    blinkingCursor 500ms steps(50) infinite normal;
+    blinkingCursor 500ms steps(50) 1s 10 normal; /* only blink 10 times */
 }
 
 @keyframes typewriter {
@@ -73,7 +82,7 @@ main {
 }
 
 @keyframes blinkingCursor {
-  from { border-right-color: rgba(0,0,0,0.75); }
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
   to { border-right-color: transparent; }
 }
 
