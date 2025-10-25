@@ -58,18 +58,77 @@ main {
   border-right: 2px solid #000;
   font-weight: 600;
   font-size: 2rem;
-  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.typewriter-animation {
+  animation:
+    typewriter 5s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) infinite normal;
 }
 
-@keyframes blink {
-  50% { border-color: transparent }
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
+@keyframes blinkingCursor {
+  from { border-right-color: rgba(0,0,0,0.75); }
+  to { border-right-color: transparent; }
+}
+
+.intro {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.divider {
+  width: 60%;
+  margin: 80px auto;
+  border: none;
+  height: 1px;
+  background: #ccc;
+}
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px 200px;
+}
+
+.showcase-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.showcase-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.showcase-card h3 {
+  margin: 15px 0 10px;
+}
+
+.showcase-card p {
+  padding: 0 15px 20px;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 
 footer {
   background: #f4f4f4;

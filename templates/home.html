@@ -2,9 +2,41 @@
 {% block title %}Home | Northstar{% endblock %}
 {% block content %}
 <section class="hero">
-  <h1 class="typewriter">Bridging Humanity and Technology</h1>
+  <h1 class="typewriter typewriter-animation">Bridging Humanity and Technology</h1>
   <p>At Northstar, we explore the edge between AI and human creativity.</p>
 </section>
+
+<section class="intro fade-in">
+  <h2>Who We Are</h2>
+  <p>
+    At Northstar, we develop adaptive AI systems that augment human potential.
+    Our work blends precision engineering with creative intelligence to
+    redefine how people interact with technology.
+  </p>
+</section>
+
+<hr class="divider">
+
+<section class="showcase fade-in">
+  <div class="showcase-card">
+    <img src="{{ url_for('static', filename='images/automation.jpg') }}" alt="Automation">
+    <h3>Automation</h3>
+    <p>Streamlined systems that learn and evolve alongside your workflow.</p>
+  </div>
+
+  <div class="showcase-card">
+    <img src="{{ url_for('static', filename='images/vision.jpg') }}" alt="Vision">
+    <h3>Vision</h3>
+    <p>Integrating neural models with real-time analytics for actionable insight.</p>
+  </div>
+
+  <div class="showcase-card">
+    <img src="{{ url_for('static', filename='images/design.jpg') }}" alt="Design">
+    <h3>Neural Design</h3>
+    <p>Human-centered AI tools built to empower creativity, not replace it.</p>
+  </div>
+</section>
+
 
 <section class="fade-in">
   <h2>Our Vision</h2>
