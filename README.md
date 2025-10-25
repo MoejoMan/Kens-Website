@@ -16,14 +16,14 @@ The project simulates a modern AI company site with a clean white-and-black them
 ## 🧭 Structure
 project/
 ├── app.py
-├── /templates
+├── templates/
 │ ├── base.html
 │ ├── home.html
 │ ├── careers.html
 │ └── contact.html
-└── /static/css
+└── static/
+└── css/
 └── style.css
-
 
 ---
 
