@@ -52,22 +52,20 @@ main {
 }
 
 .typewriter-container {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   white-space: nowrap;
-  border-right: none;
 }
 
 .cursor {
-  position: relative;
-  margin: 0 auto;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  text-align: left;
 }
 
 .typewriter-animation {
@@ -92,6 +90,7 @@ main {
   text-align: center;
   line-height: 1.6;
 }
+
 
 .divider {
   width: 60%;
