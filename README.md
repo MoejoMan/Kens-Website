@@ -11,14 +11,20 @@ The project simulates a modern AI company site with a clean white-and-black them
 - **Render** – hosting and deployment  
 - **GitHub** – version control and collaboration
 
----
-
 ## 🧭 Structure
-<pre> ``` 
-   project/ ├── app.py ├── templates/ │ ├── base.html │ ├── home.html │ ├── careers.html │ └── contact.html └── static/ └── css/ └── style.css 
-   ``` </pre>
+```
+project/
+├── app.py
+├── templates/
+│ ├── base.html
+│ ├── home.html
+│ ├── careers.html
+│ └── contact.html
+└── static/
+└── css/
+└── style.css
+```
 
----
 
 ## 🚀 Running Locally
 1. Clone the repository  
