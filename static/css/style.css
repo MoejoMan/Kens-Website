@@ -1,14 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #222;
-  color: #eee;
+  background-color: #ffffff;
+  color: #000000;
   margin: 0;
 }
 
 header {
-  background: #333;
+  background: #f4f4f4;
   padding: 20px;
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 nav ul {
@@ -23,7 +24,7 @@ nav ul li {
 }
 
 nav a {
-  color: #ff6e3c;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -33,16 +34,19 @@ nav a:hover {
 }
 
 main {
-  padding: 60px 20px 300px; /* adds downward scroll buffer */
+  padding: 60px 20px 300px;
   text-align: center;
+  background: #ffffff;
+  color: #000000;
 }
 
 footer {
-  background: #333;
+  background: #f4f4f4;
   text-align: center;
   padding: 15px;
   position: relative;
   bottom: 0;
   width: 100%;
-  color: #ccc;
+  color: #333333;
+  border-top: 1px solid #ddd;
 }
